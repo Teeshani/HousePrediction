@@ -1,0 +1,135 @@
+/* General Page Styling */
+body {
+  background: #9abcdf;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+}
+
+/* Form Container with Stylish Border */
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  background: #fff; 
+  padding: 30px;
+  background-clip: padding-box; /* Ensures the background stays inside */
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  background: black;
+  border: 0.09rem solid gray;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px #ddd;
+}
+
+/* Hover Effect */
+.form-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.form-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #83b7eb;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 50px;
+}
+
+/* Input Container */
+.input-container {
+  text-align: left;
+}
+
+/* Input Label */
+.input-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9dd0f1;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.input-field {
+  padding: 10px 3px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Button */
+.predict-button {
+  background: #3498db;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 50px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.predict-button:hover {
+  background: #2980b9;
+  transform: scale(1.03);
+}
+
+/* Prediction & Error Messages */
+.prediction-result {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #27ae60;
+  margin-top: 15px;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Subtle Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-container,
+.prediction-result,
+.error-message {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+  
